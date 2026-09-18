@@ -75,7 +75,7 @@ def get_data_loaders(csv_path, root_dir, batch_size=32, img_size=(64, 64)):
 if __name__ == '__main__':
     from pathlib import Path
     
-    base_dir = Path(__file__).parent.parent
+    base_dir = Path(__file__).parent
     csv_path = base_dir / 'labels_unified_balanced.csv'
     
     # The root_dir is the new unified folder where all images are stored physically
