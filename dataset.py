@@ -78,8 +78,8 @@ if __name__ == '__main__':
     base_dir = Path(__file__).parent
     csv_path = base_dir / 'labels_unified_balanced.csv'
     
-    # The root_dir is the new unified folder where all images are stored physically
-    root_dir = base_dir / 'unified_dataset'
+    # The root_dir is the main Images folder where all datasets have been merged
+    root_dir = base_dir / 'Images'
     
     print("Initializing PyTorch DataLoader with Augmentations...")
     dataloader = get_data_loaders(csv_path, root_dir, batch_size=16)
